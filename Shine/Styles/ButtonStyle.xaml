@@ -2,17 +2,17 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style TargetType="Button">
         <Setter Property="FontSize" Value="25" />
-        <!--<Setter Property="FontFamily" Value="{StaticResource Inter}" />-->
+        <Setter Property="FontFamily" Value="{StaticResource Inter}" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="Width" Value="200" />
         <Setter Property="Height" Value="50" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Background="#C7052D" 
+                    <Border Background="#86A540" 
                             BorderBrush="Transparent"
                             BorderThickness="1" 
-                            CornerRadius="20" 
+                            CornerRadius="10" 
                             Padding="5">
                         <ContentPresenter HorizontalAlignment="Center" 
                                           VerticalAlignment="Center" />
