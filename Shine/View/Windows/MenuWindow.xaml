@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shine.View.Windows"
         mc:Ignorable="d"
-        Title="MenuWindow" Height="450" Width="800">
+        Title="Сияние" Height="650" Width="1000" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Frame Name="MainFrm" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

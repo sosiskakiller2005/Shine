@@ -1,6 +1,4 @@
-﻿using Shine.AppData;
-using Shine.View.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,20 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Shine.View.Windows
+namespace Shine.View.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MenuWindow.xaml
+    /// Логика взаимодействия для OrdersPage.xaml
     /// </summary>
-    public partial class MenuWindow : Window
+    public partial class OrdersPage : Page
     {
-        public MenuWindow()
+        public OrdersPage()
         {
             InitializeComponent();
-            MainFrm.Navigate(new MenuPage());
-            FrameHelper.selectedFrame = MainFrm;
         }
     }
 }
