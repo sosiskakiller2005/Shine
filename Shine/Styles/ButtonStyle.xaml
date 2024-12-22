@@ -21,16 +21,16 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="MenuBtn" TargetType="Button">
+    <Style x:Key="PressedBtn" TargetType="Button">
         <Setter Property="FontSize" Value="25" />
-        <Setter Property="FontFamily" Value="Tahoma" />
-        <Setter Property="Foreground" Value="Black" />
-        <Setter Property="Width" Value="150" />
-        <Setter Property="Height" Value="55" />
+        <Setter Property="FontFamily" Value="{StaticResource Inter}" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="50" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Background="#D9D9D9" 
+                    <Border Background="Black" 
                             BorderBrush="Transparent"
                             BorderThickness="1" 
                             CornerRadius="10" 
@@ -42,4 +42,26 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="UnpressedBtn" TargetType="Button">
+        <Setter Property="FontSize" Value="25" />
+        <Setter Property="FontFamily" Value="{StaticResource Inter}" />
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="50" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#F1F1F1" 
+                            BorderBrush="Transparent"
+                            BorderThickness="1" 
+                            CornerRadius="10" 
+                            Padding="5">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 </ResourceDictionary>
