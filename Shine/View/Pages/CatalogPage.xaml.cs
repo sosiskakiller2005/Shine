@@ -23,41 +23,42 @@ namespace Shine.View.Pages
     public partial class CatalogPage : Page
     {
         private static ShineDbEntities _context = App.GetContext();
+        private static List<Product> products = _context.Product.ToList();
         public CatalogPage()
         {
             InitializeComponent();
-            ProductLb.ItemsSource = _context.Product.ToList();
+            ProductLb.ItemsSource = products.Where(p => p.CategoryId == 1);
         }
 
         #region Категории товаров
         private void Category1Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            ProductLb.ItemsSource = products.Where(p => p.CategoryId == 1);
         }
 
         private void Category2Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            ProductLb.ItemsSource = products.Where(p => p.CategoryId == 2);
         }
 
         private void Category3Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            ProductLb.ItemsSource = products.Where(p => p.CategoryId == 3);
         }
 
         private void Category4Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            ProductLb.ItemsSource = products.Where(p => p.CategoryId == 4);
         }
 
         private void Category5Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            ProductLb.ItemsSource = products.Where(p => p.CategoryId == 5);
         }
 
         private void Category6Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            ProductLb.ItemsSource = products.Where(p => p.CategoryId == 6);
         }
         #endregion
 
