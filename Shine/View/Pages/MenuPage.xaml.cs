@@ -35,5 +35,10 @@ namespace Shine.View.Pages
         {
             FrameHelper.selectedFrame.Navigate(new OrdersPage());
         }
+
+        private void NewOrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.selectedFrame.Navigate(new NewOrderPage());
+        }
     }
 }

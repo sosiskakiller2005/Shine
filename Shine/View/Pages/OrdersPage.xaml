@@ -10,15 +10,19 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".2*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
-        <StackPanel>
-            <Border Height="10"/>
-            <TextBlock Text="Сборка заказов" HorizontalAlignment="Center" FontSize="25"/>
-            <Border Height="25"/>
-            <TextBox Name="SearchTb" Width="500" Text="Номер заказа или трек-номер"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="200 0 0 0">
+            <StackPanel>
+                <TextBlock Text="Сборка заказов" HorizontalAlignment="Center" FontSize="25"/>
+                <Border Height="25"/>
+                <TextBox Name="SearchTb" Width="500" Text="Номер заказа или трек-номер"/>
+            </StackPanel>
+            <Border Width="10"/>
+            <Button Name="BackBtn" Content="Назад" Click="BackBtn_Click"/>
+
         </StackPanel>
 
         <StackPanel Grid.Row="1">

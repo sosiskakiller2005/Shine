@@ -1,4 +1,5 @@
-﻿using Shine.Model;
+﻿using Shine.AppData;
+using Shine.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,6 +59,11 @@ namespace Shine.View.Pages
             WIPBtn.Style = UnpressedStyle;
             FinishedBtn.Style = PressedStyle;
             OrdersLb.ItemsSource = orders.Where(o => o.StatusId == 3);
+        }
+
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.selectedFrame.Navigate(new MenuPage());
         }
     }
 }

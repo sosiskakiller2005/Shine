@@ -17,20 +17,20 @@ using System.Windows.Shapes;
 
 namespace Shine.View.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для CatalogPage.xaml
-    /// </summary>
+    /// <summary>  
+    /// Логика взаимодействия для CatalogPage.xaml  
+    /// </summary>  
     public partial class CatalogPage : Page
     {
         private static ShineDbEntities _context = App.GetContext();
-        private static List<Product> products = _context.Product.ToList();
+        private static List<Shine.Model.Product> products = _context.Product.ToList();
         public CatalogPage()
         {
             InitializeComponent();
             ProductLb.ItemsSource = products.Where(p => p.CategoryId == 1);
         }
 
-        #region Категории товаров
+        #region Категории товаров  
         private void Category1Btn_Click(object sender, RoutedEventArgs e)
         {
             ProductLb.ItemsSource = products.Where(p => p.CategoryId == 1);

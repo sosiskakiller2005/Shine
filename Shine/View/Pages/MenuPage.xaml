@@ -15,5 +15,7 @@
         <Button Name="CatalogBtn" Content="Каталог" Click="CatalogBtn_Click"/>
         <Border Height="20"/>
         <Button Name="OrdersBtn" Content="Заказы" Click="OrdersBtn_Click"/>
+        <Border Height="20"/>
+        <Button Name="NewOrderBtn" Content="Новый заказ" Click="NewOrderBtn_Click"/>
     </StackPanel>
 </Page>
